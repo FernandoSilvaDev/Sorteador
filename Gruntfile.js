@@ -47,7 +47,7 @@ module.exports = function (grunt) {
                     patterns: [
                         { match: 'ENDERECO_DO_CSS', replacement: './styles/main.min.css'},
                         //Integrar o replace do Java Script
-                        { match: 'ENDERECO_DO_JS', replacement: '../dist/scripts/main.min.js'}
+                        { match: 'ENDERECO_DO_JS', replacement: '../scripts/main.min.js'}
                     ]
                 },
                 files: [{
