@@ -6,18 +6,14 @@ module.exports = function (grunt) {
         less: {
 //Development, hambiente de desenvolvimento do Less de processamento local
             development: {
-                files: {
-                    'dev/styles/main.css': 'src/styles/main.less'
-                }
+                files: {'dev/styles/main.css' : 'src/styles/main.less'}
             },
 //Production, hambiente de produção onde será processado no rumo final
             production: {
                 options: {
                     compress: true,
                 },
-                files: {
-                    'dist/styles/main.min.css': 'src/styles/main.less'
-                }
+                files: {'dist/styles/main.min.css': 'src/styles/main.less'}
             }
         },
         watch: {
@@ -51,7 +47,7 @@ module.exports = function (grunt) {
                     patterns: [
                         { match: 'ENDERECO_DO_CSS', replacement: './styles/main.min.css'},
                         //Integrar o replace do Java Script
-                        { match: 'ENDERECO_DO_JS', replacement: '../src/scripts/main.min.js'}
+                        { match: 'ENDERECO_DO_JS', replacement: '../dist/scripts/main.min.js'}
                     ]
                 },
                 files: [{
